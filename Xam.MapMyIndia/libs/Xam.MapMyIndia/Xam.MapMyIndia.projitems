@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{7DC235E2-61B9-4B44-BFDB-205FE7B3C8A7}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Xam.MapMyIndia</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MMIAuthModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMMIMapView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MMICircleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MMILatLongModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\MMICircle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\MMIKml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MMIKmlModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+  </ItemGroup>
+</Project>
